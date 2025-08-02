@@ -3,9 +3,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-image: url("./assets/fondo.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding: 0;
   color: #fff; /* texto blanco */
 }
 
@@ -115,4 +116,11 @@ button:hover {
 .btn svg {
   margin-right: 0.5rem;
   vertical-align: middle;
+}
+/* Contenedor principal para centrar todo el contenido */
+.container {
+  max-width: 900px; /* O el ancho que prefieras */
+  margin: 0 auto; /* Esto centra horizontalmente */
+  padding: 1rem; /* Algo de espacio interno */
+  box-sizing: border-box; /* Para que padding no aumente ancho */
 }

@@ -5,14 +5,16 @@ import Proyectos from "./pages/Proyectos";
 import Contacto from "./pages/Contacto";
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="" element={<Presentacion />} />
-        <Route path="/proyectos" element={<Proyectos />} />
-        <Route path="/contacto" element={<Contacto />} />
-      </Routes>
-    </Router>
+    <div className="container">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="" element={<Presentacion />} />
+          <Route path="/proyectos" element={<Proyectos />} />
+          <Route path="/contacto" element={<Contacto />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
